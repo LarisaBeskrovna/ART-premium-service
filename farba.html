@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="images"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>ART-PREMIUM_SERVICE</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <nav class="navigation">
+            <a class="logo" href="WebStudio">
+              <span class="logo__basic">ART </span>PREMIUM SERVICE</a
+            >
+            <ul class="navigation__list">
+              <li>
+                <a href="./index.html" class="navigation__link">Головна</a>
+              </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="navigation__link navigation__link-activ"
+                  >Послуги</a
+                >
+              </li>
+              <li><a href="#" class="navigation__link">Контакти</a></li>
+            </ul>
+            <button class="burger js-open-menu" type="button">
+              <svg width="30" height="30">
+                <use
+                  class="burger__open"
+                  href="./images/svg/icons.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+            <div class="insta">
+              <a class="footer-social__icon" href="#">
+                <svg width="40" height="40">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-portfolio">
+        <h1 style="display: none">СТАНЦІЯ ТЕХНІЧНОГО ОБСЛУГОВУВАННЯ</h1>
+        <div class="container">
+          <div class="containerfarba">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./images/ф2.jpg" />
+              <source media="(min-width: 1200px)" srcset="./images/ф2.jpg" />
+              <img
+                srcset="./images/ф2.jpg"
+                src="./images/ф2.jpg"
+                alt="дві жінки і чоловік на моніторі ноутбука"
+                style="width: 600px"
+              />
+            </picture>
+
+            <ul class="farba">
+              <li class="farba__title">Фарбування повне та подетально</li>
+              <li class="farba__title">Рихтування</li>
+              <li class="farba__title">Відновлення геометрії кузова</li>
+              <li class="farba__title">Зварювальні роботи</li>
+              <li class="farba__title">
+                Відновлення та заміна пластикових деталей
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__box">
+          <div class="footer__adres">
+            <a class="logo__footer" href="WebStudio">
+              <span class="logo__basic">ART </span>PREMIUM SERVICE</a
+            >
+
+            <div class="adres">
+              <address class="adres__blok">м. Київ, вул.Сиваська 1a</address>
+              <p>(лівий берег)</p>
+              <address>
+                <ul class="adres__list">
+                  <li class="adres__link">
+                    <a href="tel:+380971515577" class="addres"
+                      >+38(097)-15-15-577
+                    </a>
+                    <h3>авто-севіс</h3>
+                  </li>
+                  <li class="adres__link">
+                    <a href="tel:+380951515577" class="addres"
+                      >+38(095)-15-15-577</a
+                    >
+                    <h3>фарбувально-кузовний відділ</h3>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
+          <div class="social-blok">
+            <div class="map">
+              <iframe
+                class="map-container"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1523.3256056978653!2d30.6383463854923!3d50.43202034225098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c53e347a0ad5%3A0x2ef4adbe7e8d698e!2z0LLRg9C70LjRhtGPINCh0LjQstCw0YHRjNC60LAsIDHQkCwg0JrQuNGX0LIsIDAyMDAw!5e1!3m2!1suk!2sua!4v1693854730608!5m2!1suk!2sua"
+                style="border-radius: 6px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+                ></iframe
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="menu js-menu-container">
+      <button class="menu__burger js-close-menu" type="button">
+        <svg width="30" height="30">
+          <use
+            class="menu__close"
+            href="./images/svg/icons.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+      <div class="menu__list">
+        <ul>
+          <li class="menu__link"><a href="./index.html">Головна</a></li>
+          <li class="menu__link"><a href="./portfolio.html">Послуги</a></li>
+          <li class="menu__link"><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="menu__social">
+          <li class="menu__social-link menu__social-link-activ">
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

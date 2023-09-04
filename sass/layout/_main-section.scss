@@ -1,0 +1,100 @@
+.section-aside {
+  max-width: 1600px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: bottom;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/avto.jpg);
+  padding-top: 20px;
+}
+
+.caption-box {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-logo);
+  text-align: center;
+  padding-bottom: 30px;
+  @media (min-width: 768px) {
+    font-size: 46px;
+  }
+}
+
+.modal-box__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.62;
+  width: 360px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-button);
+
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.36;
+    width: 1000px;
+  }
+}
+
+/*секція друга*/
+
+.container-benefits {
+  max-width: 480px;
+  display: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1200px) {
+    display: block;
+    max-width: 1200px;
+  }
+}
+
+.benefits {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  gap: 30px;
+
+  &__link {
+    position: relative;
+    cursor: pointer;
+  }
+  &__text {
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-button);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-button);
+  margin-bottom: 20px;
+}

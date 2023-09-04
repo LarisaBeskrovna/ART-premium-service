@@ -1,0 +1,33 @@
+.farba {
+  list-style: disc;
+  padding-left: 20px;
+
+  &__title {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-button);
+    padding-top: 10px;
+    @media (min-width: 1200px) {
+      font-size: 22px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+.containerfarba {
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 10px;
+  }
+  @media (min-width: 1200px) {
+    gap: 30px;
+  }
+}
+
+.farbaimg {
+  width: 400px;
+  @media (min-width: 1200px) {
+    width: 600px;
+  }
+}

@@ -1,0 +1,115 @@
+.section-portfolio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.portfolio-card {
+  list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  &__link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__link {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background: #ffffff;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+}
+.portfolio-card__item:hover .list-overlay {
+  transform: translateY(0);
+}
+
+.list-overlay {
+  position: absolute;
+  color: var(--color-button);
+  background: rgb(52 56 60 / 90%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms;
+
+  &__text {
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+  }
+}
+
+.description {
+  padding: 10px 14px;
+
+  border-top: none;
+
+  &__box {
+    padding: 20px 24px;
+
+    background: rgb(92, 91, 91);
+    border-top: none;
+    @media (min-width: 768px) {
+      padding-bottom: 56px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-bottom: 20px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-button);
+    text-align: center;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-button);
+    margin-top: 4px;
+  }
+}
+
+.sale {
+  font-size: 48px;
+  color: var(--color-logo);
+  padding: 20px 10px;
+  text-align: center;
+}

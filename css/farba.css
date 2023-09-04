@@ -1,0 +1,22 @@
+.farba {
+  background: var(--color-ligt);
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.farba__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-button);
+  text-align: center;
+}
+
+.containerfarba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.farbaimg {
+  width: 600px;
+}/*# sourceMappingURL=farba.css.map */
